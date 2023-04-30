@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czär Web Dev</title>
+    <link rel="stylesheet" href="templates/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <div id="menu">
+        <div id="logoImg">
+        <img id='logoimage' src="./templates/imgs/logoart-white.png" alt="CzärLogo" height="100%" width="100%">
+        </div>
+        <div><a class="menuIndex" onmouseenter="blackBack()" onmouseleave="whiteBack()" href="index.html"><button>Home</button></a></div>
+        <div><a class="menuIndex"  onmouseenter="blackBack()" onmouseleave="whiteBack()" href="#skills"><button>Skills</button></a></div>
+        <div><a class="menuIndex" onmouseenter="blackBack()" onmouseleave="whiteBack()" href="#projects"><button>Projects</button></a></div>
+        <div><a class="menuIndex" onmouseenter="blackBack()" onmouseleave="whiteBack()" href="#contact"><button>Contact</button></a></div>
+
+    </div>
+    <div id="resume">
+        <div id="Text">
+            <h1>CESAR AUGUSTO</h1>
+        <p id="resumetxt">asdasdsadasdsadasdsadsadsadasdasdasdasdasdsadsadasdsadsadasdasdasdsadasd
+            asdasdsadasdsadasdsadsadsadasdasdasdasdasdsadsadasdsadsadasdasdasdsadasd
+            sadsadasasdsadsadsadsadasdsadasdasdasdsadsadasdsadsadasdasdasdasdsadsadsad
+        </p>
+        <img id="skillsimg" src="templates/imgs/logo/Asset 3.png"  alt="skillslogo" width="40%" height="auto">
+    </div><div>
+        <img src="templates/imgs/profile.jpeg" alt="ProfilePicture" height="100%" width="100%">
+   </div> </div>
+    <div id="skills">
+        <h1>Skills</h1>
+        <p id="clickskill">Click to see Projects based on skills</p>
+        <div class="container">
+            <p class="skillstxt1">Web Developer Focused in Django</p>
+            <p class="skillstxt">Developer Stack</p>
+            <p class="skillstxt2">*Always learning more Skills</p>
+       <div class="HTML"><a onmouseup="skillChoose('#htmlLogo','#htmlLogo1')" id="htmlLogo"  class="aSkills" href="projects.html" ><img id="htmlLogo1"class="logoimg" src="templates/imgs/logo/HTML.png" alt="html"></a></div>
+        <div class="CSS"><a onclick="skillChoose('#csslogo', '#csslogo1')" id="csslogo" class="aSkills" ><img id="csslogo1" class="logoimg" src="templates/imgs/logo/CSS.png" alt="CSS"></a></div>
+        <div class="JS"><a onclick="skillChoose('#jsLogo', '#jsLogo1')"  id="jsLogo" class="aSkills" href="#"><img id="jsLogo1" class="logoimg" src="templates/imgs/logo/JS.png" alt="JS"></a></div>
+     <div class="React"><a class="aSkills" onclick="skillChoose('#reactLogo', '#reactLogo1')" id="reactLogo"  href="#"><img id="reactLogo1" class="logoimg" src="templates/imgs/logo/React.png" alt="REACT"></a></div>
+        <div class="Python"> <a  class="aSkills" onclick="skillChoose('#pythonLogo', '#pythonLogo1')" id="pythonLogo"  href="#"><img id="pythonLogo1" class="logoimg" src="templates/imgs/logo/Python.png" alt="Python"></a></div>
+        <div class="Ghub"><a class="aSkills" onclick="skillChoose('#ghubLogo', '#ghubLogo1')"  id="ghubLogo" href="#"><img id="ghubLogo1" class="logoimg"  src="templates/imgs/logo/Ghub.png" alt="Ghub"></a></div>
+        <div class="Django"><a class="aSkills" onclick="skillChoose('#django', '#django1')"  id="django" href="#"><img id="django1" class="logoimg"  src="templates/imgs/logo/djlogo.png" alt="django"></a></div>
+          </div>
+        
+    
+
+<script src="scripts/script.js"></script>    
+</body>
+
+</html>

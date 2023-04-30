@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+#menu{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    align-items: top;
+    height: 140px;
+    gap: 1rem;
+    transition: ease 1s;
+    
+}
+
+#resumetxt{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 10px;
+}
+body{
+    background-color: white;
+    margin: 0;
+    
+}
+
+button{
+    font-weight: 900;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: xx-large;
+    margin-top: 35px;
+    border: 0;
+    background-color: transparent;
+    height:70px ;
+    transition:  ease-in-out 0.7s ;
+
+}
+
+#logoImg{
+    padding-top: 10px;
+    margin-top: -30px;
+}
+
+#logoimage{
+    transition: ease 0.8s;
+    mix-blend-mode: difference;
+    margin-top: 20px;
+    width: 30%;
+    height: auto;
+    position:fixed;
+}
+#resume{
+    color: white;
+    background-color: black;
+   gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 3% 3%;
+    
+}
+
+#imghome{
+    align-self: center;
+}
+
+
+#Text{
+    text-align: -webkit-center;
+}
+
+.logoimg{
+    width: 180px;
+    height: auto;
+}
+
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . . . . . . . . ."
+      ". . . CSS CSS . . Python Python . . ."
+      ". HTML HTML CSS CSS React React Python Python Django Django ."
+      "text HTML HTML JS JS React React Ghub Ghub Django Django ."
+      "text . . JS JS . . Ghub Ghub . . ."
+      "text1 text1 text1 text1 text1 text1 text1 text1 text2 text2 text2 text2"; 
+      text-align: -webkit-center;
+  }
+  
+  .HTML { grid-area: HTML;}
+  
+  .CSS { grid-area: CSS; }
+  
+  .JS { grid-area: JS; }
+  
+  .React { grid-area: React; }
+  
+  .Python { grid-area: Python; }
+  
+  .Ghub { grid-area: Ghub; }
+  
+  .Django { grid-area: Django; }
+  
+
+ .logoimg{
+    filter: drop-shadow(30px 10px 1px #0302025e);
+    
+    transition: ease 1.6s;
+  }
+
+  .logoimg:hover{
+    width: 200px;
+    filter: drop-shadow(30px 10px 4px #040404);
+  }
+
+  .aSkills:hover{
+    filter: drop-shadow(0 0 0.5rem rgb(255, 0, 0));
+  }
+
+  #skills{
+    background-color: rgb(255, 255, 255);
+  }
+
+  h1{
+    text-align: -webkit-center;
+    font-family: 'Bruno Ace SC', cursive;
+
+  }
+
+  .skillstxt{
+    font-family: 'Bruno Ace SC', cursive;
+    text-align: -webkit-center;
+    font-weight: 900;
+    font-size: x-large;
+    margin-bottom: 0px;
+    grid-area: text;
+    -webkit-writing-mode: vertical-rl;
+    text-shadow: 2px 2px 10px rgb(4, 1, 1);
+
+    
+  }
+  a{
+    animation: ease 1s
+  }
+  .skillstxt1 {
+    font-family: 'Bruno Ace SC', cursive;
+    text-align: -webkit-center;
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 0px;
+    grid-area: text1;
+    text-shadow: 1px 1px 1px rgb(19, 161, 83);
+    transition: ease 0.5s;
+  }
+
+  .skillstxt2{
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px rgb(3, 236, 248);
+    font-family: 'Bruno Ace SC', cursive;
+    text-align: -webkit-center;
+    grid-area: text2;
+    font-size: large;
+  }
+
+
+  .hidden{
+    transform: scale(0%) ;
+  }
+  .centered {
+    position: absolute;
+    top:100%;
+    bottom: 50%;
+    left: 0;
+    right: 60%;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+  }
+
+button{
+    text-shadow: 12px 12px 12px black;
+}
+
+.bigger{
+    animation: makeBigger 2s ease;
+    width: 650px;
+    height: auto;
+    
+}
+
+@keyframes makeBigger {
+    0%{
+        width: 180px;
+        height: auto;
+        transform: rotate(0);
+    }
+
+    100%{
+        width: 650px;
+        height: auto;
+        transform: rotate(360deg);
+
+    }
+
+    
+}
+
+button:hover{
+    font-size: 40px;
+    text-shadow: 12px 12px 6px white;
+    font-weight: bolder;
+    
+    color: white;
+}
+#clickskill{
+    text-align: -webkit-center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
