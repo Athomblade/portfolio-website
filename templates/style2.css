@@ -2,7 +2,7 @@
 
 .container2 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -12,7 +12,7 @@
     "pr4 pr4 logoimage logoimage pr2 pr2"
     "pr3 pr3 pr3 pr3 pr2 pr2"
     "pr3 pr3 pr3 pr3 pr2 pr2"
-    ". . . . . .";
+    ;
   background-color: black;
   padding: 70px;
   gap: 2rem;

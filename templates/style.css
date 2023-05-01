@@ -218,3 +218,25 @@ button:hover{
     font-family: 'Bruno Ace SC', cursive;
 }
 
+#endpage, #contact{
+  text-align: -webkit-center;
+    font-family: 'Bruno Ace SC', cursive;
+  color: white;
+  background-color: #040404;
+}
+
+#contact{
+  gap:1rem;
+  font-size: small;
+}
+
+.contactinfo{
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
