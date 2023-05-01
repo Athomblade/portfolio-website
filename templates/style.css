@@ -240,3 +240,16 @@ button:hover{
 a{
   text-decoration: none;
 }
+
+#ghublogomini{
+  mix-blend-mode: difference;
+  width: 30%;
+  height: auto;
+}
+
+.linksghub{
+  font-family: 'Bruno Ace SC', cursive;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
