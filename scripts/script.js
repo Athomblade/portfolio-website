@@ -4,8 +4,7 @@ const logo = document.querySelector('#logoimage')
 
 window.addEventListener('scroll', function(event){
     let scroll = this.scrollY;
-    console.log(scroll)
-   if(scroll < 100){
+    if(scroll < 100){
         logo.style.width = '30%'
         logo.style.height = '30%'
         
