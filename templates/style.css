@@ -253,3 +253,22 @@ a{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+#brz{
+  color: yellow;
+  text-shadow: 2px 2px 1px rgb(11, 211, 11);
+}
+
+#cnd{
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 3px rgb(249, 249, 249);
+}
+
+#usa{
+  color: rgb(25, 0, 255);
+  text-shadow: 1px 1px 5px rgb(249, 5, 5);
+}
+
+#resumejobinfo{
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
