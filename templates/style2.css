@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 .container2 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -23,27 +25,38 @@
  }
 
 .pr2 { grid-area: pr2; 
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   background-color: white;
+  text-align: center;
 border-radius: 15px;
-text-align: -webkit-center;}
+text-align: -webkit-center;
+vertical-align: -webkit-baseline-middle;}
 
 .pr1 { grid-area: pr1; 
   display: flex;
+  text-align: center;
   background-color: white;
   border-radius: 15px;
+  vertical-align: -webkit-baseline-middle;
 }
 
 .pr3 { grid-area: pr3;
   display: flex;
   background-color: white;
   border-radius: 15px; 
-  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
 }
 
-.pr4 { grid-area: pr4; 
+.pr4 { grid-area: pr4;
+  display: grid;
+  grid-template-rows: 1fr 1fr; 
   background-color: white;
+  text-align: center;
   border-radius: 15px;
-  text-align: -webkit-center;}
+  text-align: -webkit-center;
+  vertical-align: -webkit-baseline-middle;}
 
 
 .prjctTxt{
@@ -59,4 +72,17 @@ text-align: -webkit-center;}
 .logoimageprjct{
   width: 260px;
   height: auto;
+}
+
+span{
+  font-size:small;
+  font-family: 'Bruno Ace SC', cursive;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.prjctTxt{
+  font-family: 'Bruno Ace SC', cursive;
+  
 }
