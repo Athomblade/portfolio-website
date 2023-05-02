@@ -18,6 +18,7 @@
 body{
     background-color: white;
     margin: 0;
+    transition: 1s ease;
     
 }
 
@@ -47,8 +48,7 @@ button{
     position:fixed;
 }
 #resume{
-    color: white;
-    background-color: black;
+    
    gap: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,6 +63,7 @@ button{
 
 
 #Text{
+  text-shadow: 2px 2px 20px white;
     text-align: -webkit-center;
 }
 
@@ -85,6 +86,10 @@ button{
       "text . . JS JS . . Ghub Ghub . . ."
       "text1 text1 text1 text1 text1 text1 text1 text1 text2 text2 text2 text2"; 
       text-align: -webkit-center;
+      background-image: url("./imgs/manspace.jpg");
+      background-size: cover;
+    box-shadow: 2px 2px 10px black  ;
+    border-radius: 5%;
   }
   
   .HTML { grid-area: HTML;}
@@ -110,11 +115,11 @@ button{
 
   .logoimg:hover{
     width: 200px;
-    filter: drop-shadow(30px 10px 4px #040404);
+    filter: drop-shadow(30px 10px 4px #08d5f4);
   }
 
   .aSkills:hover{
-    filter: drop-shadow(0 0 0.5rem rgb(255, 0, 0));
+    filter: drop-shadow(0 0 0.5rem rgb(255, 0, 191));
   }
 
   #skills{
@@ -128,6 +133,7 @@ button{
   }
 
   .skillstxt{
+    color: white;
     font-family: 'Bruno Ace SC', cursive;
     text-align: -webkit-center;
     font-weight: 900;
@@ -148,12 +154,14 @@ button{
     font-weight: 700;
     font-size: x-large;
     margin-bottom: 0px;
+    color: white;
     grid-area: text1;
-    text-shadow: 1px 1px 1px rgb(19, 161, 83);
+    text-shadow: 1px 1px 1px rgb(60, 255, 0);
     transition: ease 0.5s;
   }
 
   .skillstxt2{
+    color: white;
     margin-top: 30px;
     text-shadow: 1px 1px 1px rgb(3, 236, 248);
     font-family: 'Bruno Ace SC', cursive;
@@ -226,10 +234,23 @@ button:hover{
 }
 
 #contact{
+  background-image: url("./imgs/planetpink.jpg");
+  background-size: cover;
+  background-position: 0% 82%;
   gap:1rem;
   font-size: small;
+text-shadow: 2px 2px 10px black;
+box-shadow: 2px 2px 10px black  ;
+
 }
 
+a{
+color: #040404;
+font-size: 15px;
+text-align: center;
+margin-top: 25px;
+
+}
 .contactinfo{
   gap: 1rem;
   display: flex;
@@ -271,4 +292,13 @@ a{
 
 #resumejobinfo{
   text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+#resume{
+box-shadow: 2px 2px 10px black  ;
+
+background-image: url("./imgs/sun.jpg");
+background-size: cover;
+border-radius: 5%;
+
 }

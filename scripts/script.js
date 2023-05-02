@@ -49,8 +49,9 @@ window.addEventListener('scroll', function(event){
 
 function blackBack(){
     menu = document.querySelector('#menu');
-
+    body = document.querySelector('body')
     menu.style.backgroundColor = 'black'
+    body.style.backgroundColor = 'black'
     
         
    }
@@ -58,8 +59,11 @@ function blackBack(){
 function whiteBack(){
 
 menu = document.querySelector('#menu');
+body = document.querySelector('body')
 
 menu.style.backgroundColor = 'white'
+body.style.backgroundColor = 'white'
+
 
 
 
