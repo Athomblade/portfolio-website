@@ -1,62 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 .container2 {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr  ;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "pr4 pr4 pr1 pr1 pr1 pr1"
-    "pr4 pr4 pr1 pr1 pr1 pr1"
-    "pr4 pr4 logoimage logoimage pr2 pr2"
-    "pr4 pr4 logoimage logoimage pr2 pr2"
-    "pr3 pr3 pr3 pr3 pr2 pr2"
-    "pr3 pr3 pr3 pr3 pr2 pr2"
-    ;
+   
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills . . Links Links Links Links Links . . txt txt txt ."
+    
+;
+    gap: 2rem;
   background-color: black;
-  padding: 70px;
-  gap: 2rem;
+  padding: 40px 10px;
+  
   
 }
+
+.container3 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr  ;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+   
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills img img img img img img img img img txt txt txt ."
+    "skills skills skills . . Links Links Links Links Links . . txt txt txt ."
+    
+;
+    gap: 2rem;
+  background-color: black;
+  padding: 40px 10px;
+  
+  
+}
+  
+.skills { grid-area: skills; 
+text-align:center;}
+  
+.img { grid-area: img;
+  filter: drop-shadow(1px 1px 5px #ffffff);
+  
+}
+
+.txt { grid-area: txt; 
+  filter: drop-shadow(1px 1px 5px #ffffff); }
+
+.Links { 
+  align-self: baseline;
+  grid-area: Links;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  text-align: center;
+border-radius: 15px;
+text-align: -webkit-center;
+vertical-align: -webkit-baseline-middle;
+filter: drop-shadow(1px 1px 5px #ffffff);
+ }
 
 .logoimage {
    grid-area: logoimage;
   text-align: -webkit-center;
  }
 
-.pr2 { grid-area: pr2; 
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  background-color: white;
-  text-align: center;
-border-radius: 15px;
-text-align: -webkit-center;
-vertical-align: -webkit-baseline-middle;}
-
-.pr1 { grid-area: pr1; 
-  display: flex;
-  text-align: center;
-  background-color: white;
-  border-radius: 15px;
-  vertical-align: -webkit-baseline-middle;
-}
-
-.pr3 { grid-area: pr3;
-  display: flex;
-  background-color: white;
-  border-radius: 15px; 
-  text-align: center;
-  vertical-align: -webkit-baseline-middle;
-}
-
-.pr4 { grid-area: pr4;
-  display: grid;
-  grid-template-rows: 1fr 1fr; 
-  background-color: white;
-  text-align: center;
-  border-radius: 15px;
-  text-align: -webkit-center;
-  vertical-align: -webkit-baseline-middle;}
 
 
 .prjctTxt{
@@ -85,4 +99,12 @@ span{
 .prjctTxt{
   font-family: 'Bruno Ace SC', cursive;
   
+}
+
+#skillimagen{
+  filter: drop-shadow(1px 1px 5px #ffffff);
+}
+
+img{
+  border-radius: 15px;
 }
