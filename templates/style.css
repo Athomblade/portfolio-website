@@ -358,3 +358,109 @@ a {
   transform: translateY(0);
 
 }
+
+@media( max-width: 900px){
+  #menu {
+    background-color: white;
+    display: grid;
+
+    align-items: top;
+    
+    
+    transition: ease 1s;
+   
+  }
+
+  #menu {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . . logoImg logoImg logoImg logoImg logoImg logoImg . . . . ."
+      ". homes homes homes skillss skillss . prjctss prjctss prjctss prjctss contacts contacts contacts contacts contacts"; 
+  }
+  
+  #logoImg { grid-area: logoImg; }
+  
+  #homes { grid-area: homes; }
+  
+  #skillss { grid-area: skillss; }
+  
+  #prjctss { grid-area: prjctss; }
+  
+  #contacts { grid-area: contacts; }
+  
+  
+  button {
+    font-weight: 900;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size:large;
+    margin-top: 0;
+    border: 0;
+    background-color: transparent;
+    height: 70px;
+    transition: none;
+  
+  }
+
+  #logoimage {
+    z-index: 1;
+    transition: none;
+    mix-blend-mode: difference;
+    margin-top: 20px;
+    width: 30%;
+    height: auto;
+    position:absolute;
+  }
+
+  button:hover {
+    color: #040404;
+    font-size:large;
+
+  }
+
+  .logoimg {
+    width: 100px;
+    height: auto;
+  }
+
+  #resume {
+
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 3% 3%;
+  
+  }
+
+  .container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "text . . . . . . . . . . ."
+      "text . . CSS CSS . . Python Python . . ."
+      "text HTML HTML CSS CSS React React Python Python Django Django ."
+      "text HTML HTML JS JS React React Ghub Ghub Django Django ."
+      ". . . JS JS . . Ghub Ghub . . ."
+      "text1 text1 text1 text1 text1 text1 text1 text1 text2 text2 text2 text2";
+    text-align: -webkit-center;
+    background-image: url("./imgs/manspace.jpg");
+    background-size: cover;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5%;
+  }
+
+  .logoimg:hover {
+    width: 100px;
+    filter: drop-shadow(30px 10px 4px #08d5f4);
+  }
+  
+  .aSkills:hover {
+    filter: drop-shadow(0 0 0.5rem rgb(255, 0, 191));
+  }
+}

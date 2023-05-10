@@ -1,19 +1,23 @@
 
-
+let x = window.matchMedia("(min-width: 900px)")
 const logo = document.querySelector('#logoimage')
 
 window.addEventListener('scroll', function (event) {
     let scroll = this.scrollY;
     console.log(scroll)
-    if (scroll < 100) {
-        logo.style.width = '30%'
-        logo.style.height = '30%'
+    if (x.matches){
+        if (scroll < 100 )  {
+                logo.style.width = '30%'
+                logo.style.height = '30%'
 
-    } else if (100 < scroll) {
-        logo.style.width = '10%'
-        logo.style.height = '10%'
+            } else if (100 < scroll ) {
+                logo.style.width = '10%'
+                logo.style.height = '10%'
 
+            }
+        
     }
+    
 })
 
 
@@ -49,21 +53,27 @@ window.addEventListener('scroll', function (event) {
 
 
 function blackBack() {
-    menu = document.querySelector('#menu');
+    if (x.matches){
+        menu = document.querySelector('#menu');
     body = document.querySelector('body')
     menu.style.backgroundColor = 'black'
     body.style.backgroundColor = 'black'
+    }
+    
 
 
 }
 
 function whiteBack() {
 
-    menu = document.querySelector('#menu');
+    if (x.matches){
+            menu = document.querySelector('#menu');
     body = document.querySelector('body')
 
     menu.style.backgroundColor = 'white'
     body.style.backgroundColor = 'white'
+    }
+
 
 
 }
