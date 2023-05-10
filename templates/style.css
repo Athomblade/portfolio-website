@@ -464,3 +464,55 @@ a {
     filter: drop-shadow(0 0 0.5rem rgb(255, 0, 191));
   }
 }
+
+@media (max-width: 600px){
+  button{
+    font-size:medium;
+
+  }
+
+  #menu,#resume, #skills{
+    width: 115%;
+  }
+}
+
+.aSkills{
+
+	        animation: blink-1 3s infinite both;
+}
+
+#reactLogo{
+  animation-delay: 2s;
+}
+
+#django{
+  animation-delay: 1.5s;
+
+}
+
+#csslogo{
+  animation-delay: 1s;
+}
+#pythonLogo{
+  animation-delay: 2.3s;
+}
+#jsLogo{
+  animation-delay: 2.8s;
+}
+
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    filter: brightness(100%);
+    
+    
+  }
+  25%,
+  75% {
+    filter: brightness(120%);
+
+
+  }
+}
+
