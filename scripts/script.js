@@ -4,6 +4,7 @@ const logo = document.querySelector('#logoimage')
 
 window.addEventListener('scroll', function(event){
     let scroll = this.scrollY;
+    console.log(scroll)
     if(scroll < 100){
         logo.style.width = '30%'
         logo.style.height = '30%'
@@ -65,7 +66,29 @@ menu.style.backgroundColor = 'white'
 body.style.backgroundColor = 'white'
 
 
-
-
 }
+
+const para = document.querySelectorAll('p')
+para.forEach((img) => {
+    img.classList.add('hidden2')
+})
+
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=> {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }else{
+            entry.target.classList.remove("show");
+        }
+    });
+});
+
+
+const hiddenEle = document.querySelectorAll(".hidden");
+hiddenEle.forEach((el) => observer.observe(el));
+
+const hiddenEle2 = document.querySelectorAll(".hidden2");
+hiddenEle2.forEach((el2) => observer.observe(el2));
+
 
